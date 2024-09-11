@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\blend2d\api-globals.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\api-nocxx.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\array.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\bitarray.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\bitset.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\compopinfo.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\context.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\filesystem.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\font.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fontdata.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fontface.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fontfeaturesettings.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fontmanager.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fonttagdataids.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fonttagdatainfo.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fonttagset.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\fontvariationsettings.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\format.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\geometry.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\glyphbuffer.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\gradient.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\image.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\imagecodec.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\imagedecoder.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\imageencoder.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\imagescale.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\matrix.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\matrix_avx.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\matrix_sse2.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\object.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\path.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pathstroke.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pattern.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelconverter.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelconverter_avx2.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelconverter_sse2.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelconverter_ssse3.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\random.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\runtime.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\runtimescope.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\string.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\trace.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\var.cpp">
+      <Filter>src\blend2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\bmpcodec.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\jpegcodec.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\jpeghuffman.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\jpegops.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\jpegops_sse2.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\pngcodec.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\pngops.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\pngops_sse2.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\codec\qoicodec.cpp">
+      <Filter>src\blend2d\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\compression\checksum.cpp">
+      <Filter>src\blend2d\compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\compression\deflatedecoder.cpp">
+      <Filter>src\blend2d\compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\compression\deflateencoder.cpp">
+      <Filter>src\blend2d\compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otcff.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otcmap.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otcore.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otface.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otglyf.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otglyf_asimd.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otglyf_avx2.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otglyf_sse4_2.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otglyfsimddata.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otkern.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otlayout.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otmetrics.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otname.cpp">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\pipedefs.cpp">
+      <Filter>src\blend2d\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\piperuntime.cpp">
+      <Filter>src\blend2d\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\compoppart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchgradientpart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchpart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchpatternpart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchpixelptrpart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchsolidpart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchutilsinlineloops.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchutilspixelaccess.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchutilspixelgather.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fillpart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipecompiler_a64.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipecompiler_x86.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipecomposer.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipefunction.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipeprimitives.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipegenruntime.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipepart.cpp">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pipeline\reference\fixedpiperuntime.cpp">
+      <Filter>src\blend2d\pipeline\reference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelops\interpolation.cpp">
+      <Filter>src\blend2d\pixelops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelops\interpolation_avx2.cpp">
+      <Filter>src\blend2d\pixelops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelops\interpolation_sse2.cpp">
+      <Filter>src\blend2d\pixelops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelops\funcs.cpp">
+      <Filter>src\blend2d\pixelops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\rastercontext.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\rastercontextops.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\renderfetchdata.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\rendertargetinfo.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\workdata.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\workermanager.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\workerproc.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\raster\workersynchronization.cpp">
+      <Filter>src\blend2d\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\support\arenaallocator.cpp">
+      <Filter>src\blend2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\support\arenahashmap.cpp">
+      <Filter>src\blend2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\support\math.cpp">
+      <Filter>src\blend2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\support\scopedallocator.cpp">
+      <Filter>src\blend2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\support\zeroallocator.cpp">
+      <Filter>src\blend2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\tables\tables.cpp">
+      <Filter>src\blend2d\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\threading\futex.cpp">
+      <Filter>src\blend2d\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\threading\thread.cpp">
+      <Filter>src\blend2d\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\threading\threadpool.cpp">
+      <Filter>src\blend2d\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\threading\uniqueidgenerator.cpp">
+      <Filter>src\blend2d\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\unicode\unicode.cpp">
+      <Filter>src\blend2d\unicode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\blend2d.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d-debug.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d-impl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\api.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\api-build_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\api-build_test_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\api-impl.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\api-internal_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\array.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\array_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\bitarray.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\bitarray_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\bitset.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\bitset_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\compop_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\compopinfo_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\context.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\context_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\filesystem.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\filesystem_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\font.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\font_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontdata.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontdata_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontdefs.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontface.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontface_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontfeaturesettings.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontfeaturesettings_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontmanager.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontmanager_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fonttagdata_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fonttagdataids_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fonttagdatainfo_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fonttagset_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontvariationsettings.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\fontvariationsettings_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\format.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\format_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\geometry.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\geometry_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\glyphbuffer.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\glyphbuffer_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\glyphrun.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\gradient.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\gradient_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\image.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\image_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\imagecodec.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\imagedecoder.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\imageencoder.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\imagescale_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\matrix.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\matrix_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\object.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\object_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\path.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\path_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pathstroke_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pattern.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pattern_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pixelconverter.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pixelconverter_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\random.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\random_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\rgba.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\runtime.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\runtime_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\runtimescope.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\string.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\string_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\trace_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\var.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\var_p.h">
+      <Filter>src\blend2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\codec\bmpcodec_p.h">
+      <Filter>src\blend2d\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\codec\jpegcodec_p.h">
+      <Filter>src\blend2d\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\codec\jpeghuffman_p.h">
+      <Filter>src\blend2d\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\codec\jpegops_p.h">
+      <Filter>src\blend2d\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\codec\pngcodec_p.h">
+      <Filter>src\blend2d\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\codec\pngops_p.h">
+      <Filter>src\blend2d\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\codec\qoicodec_p.h">
+      <Filter>src\blend2d\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\compression\checksum_p.h">
+      <Filter>src\blend2d\compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\compression\deflatedecoder_p.h">
+      <Filter>src\blend2d\compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\compression\deflatedefs_p.h">
+      <Filter>src\blend2d\compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\compression\deflateencoder_p.h">
+      <Filter>src\blend2d\compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\compression\matchfinder_p.h">
+      <Filter>src\blend2d\compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otcff_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otcmap_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otcore_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otdefs_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otface_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otglyf_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otglyfsimddata_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otglyfsimdimpl_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otkern_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otlayout_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otlayoutcontext_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otlayouttables_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otmetrics_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otname_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\opentype\otplatform_p.h">
+      <Filter>src\blend2d\opentype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\pipedefs_p.h">
+      <Filter>src\blend2d\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\piperuntime_p.h">
+      <Filter>src\blend2d\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\compoppart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\compoputils_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchgradientpart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchpart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchpatternpart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchpixelptrpart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchsolidpart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilsbilinear_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilscoverage_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilsinlineloops_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilspixelaccess_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilspixelgather_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fillpart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\jitbase_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipecompiler_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipecomposer_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipedebug_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipefunction_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipeprimitives_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipegenruntime_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipepart_p.h">
+      <Filter>src\blend2d\pipeline\jit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\reference\compopgeneric_p.h">
+      <Filter>src\blend2d\pipeline\reference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\reference\fetchgeneric_p.h">
+      <Filter>src\blend2d\pipeline\reference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\reference\fillgeneric_p.h">
+      <Filter>src\blend2d\pipeline\reference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\reference\fixedpiperuntime_p.h">
+      <Filter>src\blend2d\pipeline\reference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\reference\pixelbufferptr_p.h">
+      <Filter>src\blend2d\pipeline\reference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pipeline\reference\pixelgeneric_p.h">
+      <Filter>src\blend2d\pipeline\reference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pixelops\funcs_p.h">
+      <Filter>src\blend2d\pixelops</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\pixelops\scalar_p.h">
+      <Filter>src\blend2d\pixelops</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\analyticrasterizer_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\debugging_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\edgebuilder_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\edgestorage_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\rastercontext_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\rastercontextops_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\rasterdefs_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\renderbatch_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\rendercommand_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\rendercommandprocasync_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\rendercommandprocsync_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\renderfetchdata_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\renderjob_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\renderjobproc_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\renderqueue_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\rendertargetinfo_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\statedata_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\styledata_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\workdata_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\workermanager_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\workerproc_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\raster\workersynchronization_p.h">
+      <Filter>src\blend2d\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\simd\simd_p.h">
+      <Filter>src\blend2d\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\simd\simd_test_p.h">
+      <Filter>src\blend2d\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\simd\simdbase_p.h">
+      <Filter>src\blend2d\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\simd\simdarm_p.h">
+      <Filter>src\blend2d\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\simd\simdx86_p.h">
+      <Filter>src\blend2d\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\algorithm_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\arenaallocator_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\arenabitarray_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\arenahashmap_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\arenalist_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\arenatree_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\bitops_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\fixedbitarray_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\hashops_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\intops_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\lookuptable_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\math_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\memops_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\ptrops_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\scopedallocator_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\scopedbuffer_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\stringops_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\wrap_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\support\zeroallocator_p.h">
+      <Filter>src\blend2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\tables\tables_p.h">
+      <Filter>src\blend2d\tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\atomic_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\conditionvariable_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\futex_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\mutex_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\thread_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\threadingutils_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\threadpool_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\tsanutils_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\threading\uniqueidgenerator_p.h">
+      <Filter>src\blend2d\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\blend2d\unicode\unicode_p.h">
+      <Filter>src\blend2d\unicode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="N:\Development\Dev_Base\blend2d-0.11.4\src\blend2d.natvis">
+      <Filter>src</Filter>
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{B3C2849C-3218-3EB1-8CA7-B4FFE916B5D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d">
+      <UniqueIdentifier>{53651C89-31E2-3C30-AC89-6CC44B6AFEE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\codec">
+      <UniqueIdentifier>{F7832747-D8D3-3C30-B858-72717F32FB0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\compression">
+      <UniqueIdentifier>{9693958A-43B1-37C1-9C60-B88D0DC4061D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\opentype">
+      <UniqueIdentifier>{36BABD3A-5899-3670-8C84-F1C3AC1ED1E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\pipeline">
+      <UniqueIdentifier>{C911138C-FC02-367B-B8DB-51E9876F6E73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\pipeline\jit">
+      <UniqueIdentifier>{4A6D5671-41CC-33A3-978A-4D9EFB83D1E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\pipeline\reference">
+      <UniqueIdentifier>{6BFC702A-0F5D-304C-B68D-15DA700B122D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\pixelops">
+      <UniqueIdentifier>{E7E023D6-FCC0-3C86-82CF-2C2C09DA2360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\raster">
+      <UniqueIdentifier>{FBA62D0F-E3FA-37E7-BC73-CD1CB22F030B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\simd">
+      <UniqueIdentifier>{11BEA1C6-8CE7-39F6-A37B-C081400250EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\support">
+      <UniqueIdentifier>{D775AFEA-9D3A-37AF-812A-78D9B296758A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\tables">
+      <UniqueIdentifier>{175D5E34-F179-3DFC-83BD-118DAC4174E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\threading">
+      <UniqueIdentifier>{616F1342-BD00-3F89-BF5E-AD9CB806FB2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blend2d\unicode">
+      <UniqueIdentifier>{179635E6-530F-33AD-9E29-027A8F20DA4B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

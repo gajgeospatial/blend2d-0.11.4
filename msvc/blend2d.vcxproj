@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B2FD7C4-9336-316C-9D96-72E8AE5B8C6F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>blend2d</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">blend2d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">blend2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">blend2d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">blend2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">blend2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">blend2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -Zc:strictStrings -Zc:threadSafeInit-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BL_BUILD_OPT_AVX512;CMAKE_INTDIR="Debug";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BL_BUILD_OPT_AVX512;CMAKE_INTDIR=\"Debug\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>asmjit::asmjit.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)blend2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -Zc:strictStrings -Zc:threadSafeInit-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BL_BUILD_OPT_AVX512;CMAKE_INTDIR="Debug";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BL_BUILD_OPT_AVX512;CMAKE_INTDIR=\"Debug\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>asmjit.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ASMJIT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)blend2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).pdb $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -Zc:strictStrings -Zc:threadSafeInit-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR="Release";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR=\"Release\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>asmjit::asmjit.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)blend2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -Zc:strictStrings -Zc:threadSafeInit-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR="Release";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR=\"Release\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>asmjit.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(ASMJIT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)blend2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bin   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -Zc:strictStrings -Zc:threadSafeInit-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR="MinSizeRel";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR=\"MinSizeRel\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>asmjit::asmjit.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)blend2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zc:__cplusplus -Zc:strictStrings -Zc:threadSafeInit-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR="RelWithDebInfo";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BL_BUILD_OPT_AVX512;CMAKE_INTDIR=\"RelWithDebInfo\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(ASMJIT_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>asmjit::asmjit.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)blend2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\blend2d.h" />
+    <ClInclude Include="..\src\blend2d-debug.h" />
+    <ClInclude Include="..\src\blend2d-impl.h" />
+    <ClInclude Include="..\src\blend2d\api.h" />
+    <ClInclude Include="..\src\blend2d\api-build_p.h" />
+    <ClInclude Include="..\src\blend2d\api-build_test_p.h" />
+    <ClCompile Include="..\src\blend2d\api-globals.cpp" />
+    <ClInclude Include="..\src\blend2d\api-impl.h" />
+    <ClInclude Include="..\src\blend2d\api-internal_p.h" />
+    <ClCompile Include="..\src\blend2d\api-nocxx.cpp" />
+    <ClCompile Include="..\src\blend2d\array.cpp" />
+    <ClInclude Include="..\src\blend2d\array.h" />
+    <ClInclude Include="..\src\blend2d\array_p.h" />
+    <ClCompile Include="..\src\blend2d\bitarray.cpp" />
+    <ClInclude Include="..\src\blend2d\bitarray.h" />
+    <ClInclude Include="..\src\blend2d\bitarray_p.h" />
+    <ClCompile Include="..\src\blend2d\bitset.cpp" />
+    <ClInclude Include="..\src\blend2d\bitset.h" />
+    <ClInclude Include="..\src\blend2d\bitset_p.h" />
+    <ClInclude Include="..\src\blend2d\compop_p.h" />
+    <ClInclude Include="..\src\blend2d\compopinfo_p.h" />
+    <ClCompile Include="..\src\blend2d\compopinfo.cpp" />
+    <ClCompile Include="..\src\blend2d\context.cpp" />
+    <ClInclude Include="..\src\blend2d\context.h" />
+    <ClInclude Include="..\src\blend2d\context_p.h" />
+    <ClCompile Include="..\src\blend2d\filesystem.cpp" />
+    <ClInclude Include="..\src\blend2d\filesystem.h" />
+    <ClInclude Include="..\src\blend2d\filesystem_p.h" />
+    <ClCompile Include="..\src\blend2d\font.cpp" />
+    <ClInclude Include="..\src\blend2d\font.h" />
+    <ClInclude Include="..\src\blend2d\font_p.h" />
+    <ClCompile Include="..\src\blend2d\fontdata.cpp" />
+    <ClInclude Include="..\src\blend2d\fontdata.h" />
+    <ClInclude Include="..\src\blend2d\fontdata_p.h" />
+    <ClInclude Include="..\src\blend2d\fontdefs.h" />
+    <ClCompile Include="..\src\blend2d\fontface.cpp" />
+    <ClInclude Include="..\src\blend2d\fontface.h" />
+    <ClInclude Include="..\src\blend2d\fontface_p.h" />
+    <ClCompile Include="..\src\blend2d\fontfeaturesettings.cpp" />
+    <ClInclude Include="..\src\blend2d\fontfeaturesettings.h" />
+    <ClInclude Include="..\src\blend2d\fontfeaturesettings_p.h" />
+    <ClCompile Include="..\src\blend2d\fontmanager.cpp" />
+    <ClInclude Include="..\src\blend2d\fontmanager.h" />
+    <ClInclude Include="..\src\blend2d\fontmanager_p.h" />
+    <ClInclude Include="..\src\blend2d\fonttagdata_p.h" />
+    <ClCompile Include="..\src\blend2d\fonttagdataids.cpp" />
+    <ClInclude Include="..\src\blend2d\fonttagdataids_p.h" />
+    <ClCompile Include="..\src\blend2d\fonttagdatainfo.cpp" />
+    <ClInclude Include="..\src\blend2d\fonttagdatainfo_p.h" />
+    <ClCompile Include="..\src\blend2d\fonttagset.cpp" />
+    <ClInclude Include="..\src\blend2d\fonttagset_p.h" />
+    <ClCompile Include="..\src\blend2d\fontvariationsettings.cpp" />
+    <ClInclude Include="..\src\blend2d\fontvariationsettings.h" />
+    <ClInclude Include="..\src\blend2d\fontvariationsettings_p.h" />
+    <ClCompile Include="..\src\blend2d\format.cpp" />
+    <ClInclude Include="..\src\blend2d\format.h" />
+    <ClInclude Include="..\src\blend2d\format_p.h" />
+    <ClCompile Include="..\src\blend2d\geometry.cpp" />
+    <ClInclude Include="..\src\blend2d\geometry.h" />
+    <ClInclude Include="..\src\blend2d\geometry_p.h" />
+    <ClCompile Include="..\src\blend2d\glyphbuffer.cpp" />
+    <ClInclude Include="..\src\blend2d\glyphbuffer.h" />
+    <ClInclude Include="..\src\blend2d\glyphbuffer_p.h" />
+    <ClInclude Include="..\src\blend2d\glyphrun.h" />
+    <ClCompile Include="..\src\blend2d\gradient.cpp" />
+    <ClInclude Include="..\src\blend2d\gradient.h" />
+    <ClInclude Include="..\src\blend2d\gradient_p.h" />
+    <ClCompile Include="..\src\blend2d\image.cpp" />
+    <ClInclude Include="..\src\blend2d\image.h" />
+    <ClInclude Include="..\src\blend2d\image_p.h" />
+    <ClCompile Include="..\src\blend2d\imagecodec.cpp" />
+    <ClInclude Include="..\src\blend2d\imagecodec.h" />
+    <ClCompile Include="..\src\blend2d\imagedecoder.cpp" />
+    <ClInclude Include="..\src\blend2d\imagedecoder.h" />
+    <ClCompile Include="..\src\blend2d\imageencoder.cpp" />
+    <ClInclude Include="..\src\blend2d\imageencoder.h" />
+    <ClCompile Include="..\src\blend2d\imagescale.cpp" />
+    <ClInclude Include="..\src\blend2d\imagescale_p.h" />
+    <ClCompile Include="..\src\blend2d\matrix.cpp" />
+    <ClCompile Include="..\src\blend2d\matrix_avx.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\matrix_sse2.cpp" />
+    <ClInclude Include="..\src\blend2d\matrix.h" />
+    <ClInclude Include="..\src\blend2d\matrix_p.h" />
+    <ClCompile Include="..\src\blend2d\object.cpp" />
+    <ClInclude Include="..\src\blend2d\object.h" />
+    <ClInclude Include="..\src\blend2d\object_p.h" />
+    <ClCompile Include="..\src\blend2d\path.cpp" />
+    <ClInclude Include="..\src\blend2d\path.h" />
+    <ClInclude Include="..\src\blend2d\path_p.h" />
+    <ClCompile Include="..\src\blend2d\pathstroke.cpp" />
+    <ClInclude Include="..\src\blend2d\pathstroke_p.h" />
+    <ClCompile Include="..\src\blend2d\pattern.cpp" />
+    <ClInclude Include="..\src\blend2d\pattern.h" />
+    <ClInclude Include="..\src\blend2d\pattern_p.h" />
+    <ClCompile Include="..\src\blend2d\pixelconverter.cpp" />
+    <ClCompile Include="..\src\blend2d\pixelconverter_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelconverter_sse2.cpp" />
+    <ClCompile Include="..\src\blend2d\pixelconverter_ssse3.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">__SSSE3__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">__SSSE3__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">__SSSE3__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">__SSSE3__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">__SSSE3__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">__SSSE3__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="..\src\blend2d\pixelconverter.h" />
+    <ClInclude Include="..\src\blend2d\pixelconverter_p.h" />
+    <ClCompile Include="..\src\blend2d\random.cpp" />
+    <ClInclude Include="..\src\blend2d\random.h" />
+    <ClInclude Include="..\src\blend2d\random_p.h" />
+    <ClInclude Include="..\src\blend2d\rgba.h" />
+    <ClCompile Include="..\src\blend2d\runtime.cpp" />
+    <ClInclude Include="..\src\blend2d\runtime.h" />
+    <ClInclude Include="..\src\blend2d\runtime_p.h" />
+    <ClCompile Include="..\src\blend2d\runtimescope.cpp" />
+    <ClInclude Include="..\src\blend2d\runtimescope.h" />
+    <ClCompile Include="..\src\blend2d\string.cpp" />
+    <ClInclude Include="..\src\blend2d\string.h" />
+    <ClInclude Include="..\src\blend2d\string_p.h" />
+    <ClCompile Include="..\src\blend2d\trace.cpp" />
+    <ClInclude Include="..\src\blend2d\trace_p.h" />
+    <ClCompile Include="..\src\blend2d\var.cpp" />
+    <ClInclude Include="..\src\blend2d\var.h" />
+    <ClInclude Include="..\src\blend2d\var_p.h" />
+    <ClCompile Include="..\src\blend2d\codec\bmpcodec.cpp" />
+    <ClInclude Include="..\src\blend2d\codec\bmpcodec_p.h" />
+    <ClCompile Include="..\src\blend2d\codec\jpegcodec.cpp" />
+    <ClInclude Include="..\src\blend2d\codec\jpegcodec_p.h" />
+    <ClCompile Include="..\src\blend2d\codec\jpeghuffman.cpp" />
+    <ClInclude Include="..\src\blend2d\codec\jpeghuffman_p.h" />
+    <ClCompile Include="..\src\blend2d\codec\jpegops.cpp" />
+    <ClCompile Include="..\src\blend2d\codec\jpegops_sse2.cpp" />
+    <ClInclude Include="..\src\blend2d\codec\jpegops_p.h" />
+    <ClCompile Include="..\src\blend2d\codec\pngcodec.cpp" />
+    <ClInclude Include="..\src\blend2d\codec\pngcodec_p.h" />
+    <ClCompile Include="..\src\blend2d\codec\pngops.cpp" />
+    <ClCompile Include="..\src\blend2d\codec\pngops_sse2.cpp" />
+    <ClInclude Include="..\src\blend2d\codec\pngops_p.h" />
+    <ClCompile Include="..\src\blend2d\codec\qoicodec.cpp" />
+    <ClInclude Include="..\src\blend2d\codec\qoicodec_p.h" />
+    <ClCompile Include="..\src\blend2d\compression\checksum.cpp" />
+    <ClInclude Include="..\src\blend2d\compression\checksum_p.h" />
+    <ClCompile Include="..\src\blend2d\compression\deflatedecoder.cpp" />
+    <ClInclude Include="..\src\blend2d\compression\deflatedecoder_p.h" />
+    <ClInclude Include="..\src\blend2d\compression\deflatedefs_p.h" />
+    <ClCompile Include="..\src\blend2d\compression\deflateencoder.cpp" />
+    <ClInclude Include="..\src\blend2d\compression\deflateencoder_p.h" />
+    <ClInclude Include="..\src\blend2d\compression\matchfinder_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otcff.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otcff_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otcmap.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otcmap_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otcore.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otcore_p.h" />
+    <ClInclude Include="..\src\blend2d\opentype\otdefs_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otface.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otface_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otglyf.cpp" />
+    <ClCompile Include="..\src\blend2d\opentype\otglyf_asimd.cpp" />
+    <ClCompile Include="..\src\blend2d\opentype\otglyf_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\opentype\otglyf_sse4_2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">__SSE4_2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">__SSE4_2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">__SSE4_2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">__SSE4_2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">__SSE4_2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">__SSE4_2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="..\src\blend2d\opentype\otglyf_p.h" />
+    <ClInclude Include="..\src\blend2d\opentype\otglyfsimddata_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otglyfsimddata.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otglyfsimdimpl_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otkern.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otkern_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otlayout.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otlayout_p.h" />
+    <ClInclude Include="..\src\blend2d\opentype\otlayoutcontext_p.h" />
+    <ClInclude Include="..\src\blend2d\opentype\otlayouttables_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otmetrics.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otmetrics_p.h" />
+    <ClCompile Include="..\src\blend2d\opentype\otname.cpp" />
+    <ClInclude Include="..\src\blend2d\opentype\otname_p.h" />
+    <ClInclude Include="..\src\blend2d\opentype\otplatform_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\pipedefs.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\pipedefs_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\piperuntime.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\piperuntime_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\compoppart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\compoppart_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\compoputils_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchgradientpart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchgradientpart_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchpart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchpart_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchpatternpart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchpatternpart_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchpixelptrpart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchpixelptrpart_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchsolidpart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchsolidpart_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilsbilinear_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilscoverage_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchutilsinlineloops.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilsinlineloops_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchutilspixelaccess.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilspixelaccess_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fetchutilspixelgather.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fetchutilspixelgather_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\fillpart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\fillpart_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\jitbase_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipecompiler_a64.cpp" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipecompiler_x86.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipecompiler_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipecomposer.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipecomposer_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipedebug_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipefunction_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipefunction.cpp" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipeprimitives.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipeprimitives_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipegenruntime_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipegenruntime.cpp" />
+    <ClCompile Include="..\src\blend2d\pipeline\jit\pipepart.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\jit\pipepart_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\reference\compopgeneric_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\reference\fetchgeneric_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\reference\fillgeneric_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\reference\fixedpiperuntime_p.h" />
+    <ClCompile Include="..\src\blend2d\pipeline\reference\fixedpiperuntime.cpp" />
+    <ClInclude Include="..\src\blend2d\pipeline\reference\pixelbufferptr_p.h" />
+    <ClInclude Include="..\src\blend2d\pipeline\reference\pixelgeneric_p.h" />
+    <ClCompile Include="..\src\blend2d\pixelops\interpolation.cpp" />
+    <ClCompile Include="..\src\blend2d\pixelops\interpolation_avx2.cpp">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="..\src\blend2d\pixelops\interpolation_sse2.cpp" />
+    <ClCompile Include="..\src\blend2d\pixelops\funcs.cpp" />
+    <ClInclude Include="..\src\blend2d\pixelops\funcs_p.h" />
+    <ClInclude Include="..\src\blend2d\pixelops\scalar_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\analyticrasterizer_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\debugging_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\edgebuilder_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\edgestorage_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\rastercontext.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\rastercontext_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\rastercontextops.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\rastercontextops_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\rasterdefs_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\renderbatch_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\rendercommand_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\rendercommandprocasync_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\rendercommandprocsync_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\renderfetchdata.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\renderfetchdata_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\renderjob_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\renderjobproc_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\renderqueue_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\rendertargetinfo.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\rendertargetinfo_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\statedata_p.h" />
+    <ClInclude Include="..\src\blend2d\raster\styledata_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\workdata.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\workdata_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\workermanager.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\workermanager_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\workerproc.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\workerproc_p.h" />
+    <ClCompile Include="..\src\blend2d\raster\workersynchronization.cpp" />
+    <ClInclude Include="..\src\blend2d\raster\workersynchronization_p.h" />
+    <ClInclude Include="..\src\blend2d\simd\simd_p.h" />
+    <ClInclude Include="..\src\blend2d\simd\simd_test_p.h" />
+    <ClInclude Include="..\src\blend2d\simd\simdbase_p.h" />
+    <ClInclude Include="..\src\blend2d\simd\simdarm_p.h" />
+    <ClInclude Include="..\src\blend2d\simd\simdx86_p.h" />
+    <ClInclude Include="..\src\blend2d\support\algorithm_p.h" />
+    <ClCompile Include="..\src\blend2d\support\arenaallocator.cpp" />
+    <ClInclude Include="..\src\blend2d\support\arenaallocator_p.h" />
+    <ClInclude Include="..\src\blend2d\support\arenabitarray_p.h" />
+    <ClCompile Include="..\src\blend2d\support\arenahashmap.cpp" />
+    <ClInclude Include="..\src\blend2d\support\arenahashmap_p.h" />
+    <ClInclude Include="..\src\blend2d\support\arenalist_p.h" />
+    <ClInclude Include="..\src\blend2d\support\arenatree_p.h" />
+    <ClInclude Include="..\src\blend2d\support\bitops_p.h" />
+    <ClInclude Include="..\src\blend2d\support\fixedbitarray_p.h" />
+    <ClInclude Include="..\src\blend2d\support\hashops_p.h" />
+    <ClInclude Include="..\src\blend2d\support\intops_p.h" />
+    <ClInclude Include="..\src\blend2d\support\lookuptable_p.h" />
+    <ClCompile Include="..\src\blend2d\support\math.cpp" />
+    <ClInclude Include="..\src\blend2d\support\math_p.h" />
+    <ClInclude Include="..\src\blend2d\support\memops_p.h" />
+    <ClInclude Include="..\src\blend2d\support\ptrops_p.h" />
+    <ClCompile Include="..\src\blend2d\support\scopedallocator.cpp" />
+    <ClInclude Include="..\src\blend2d\support\scopedallocator_p.h" />
+    <ClInclude Include="..\src\blend2d\support\scopedbuffer_p.h" />
+    <ClInclude Include="..\src\blend2d\support\stringops_p.h" />
+    <ClInclude Include="..\src\blend2d\support\wrap_p.h" />
+    <ClCompile Include="..\src\blend2d\support\zeroallocator.cpp" />
+    <ClInclude Include="..\src\blend2d\support\zeroallocator_p.h" />
+    <ClCompile Include="..\src\blend2d\tables\tables.cpp" />
+    <ClInclude Include="..\src\blend2d\tables\tables_p.h" />
+    <ClInclude Include="..\src\blend2d\threading\atomic_p.h" />
+    <ClInclude Include="..\src\blend2d\threading\conditionvariable_p.h" />
+    <ClCompile Include="..\src\blend2d\threading\futex.cpp" />
+    <ClInclude Include="..\src\blend2d\threading\futex_p.h" />
+    <ClInclude Include="..\src\blend2d\threading\mutex_p.h" />
+    <ClCompile Include="..\src\blend2d\threading\thread.cpp" />
+    <ClInclude Include="..\src\blend2d\threading\thread_p.h" />
+    <ClInclude Include="..\src\blend2d\threading\threadingutils_p.h" />
+    <ClCompile Include="..\src\blend2d\threading\threadpool.cpp" />
+    <ClInclude Include="..\src\blend2d\threading\threadpool_p.h" />
+    <ClInclude Include="..\src\blend2d\threading\tsanutils_p.h" />
+    <ClCompile Include="..\src\blend2d\threading\uniqueidgenerator.cpp" />
+    <ClInclude Include="..\src\blend2d\threading\uniqueidgenerator_p.h" />
+    <ClCompile Include="..\src\blend2d\unicode\unicode.cpp" />
+    <ClInclude Include="..\src\blend2d\unicode\unicode_p.h" />
+    <Natvis Include="N:\Development\Dev_Base\blend2d-0.11.4\src\blend2d.natvis">
+    </Natvis>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
